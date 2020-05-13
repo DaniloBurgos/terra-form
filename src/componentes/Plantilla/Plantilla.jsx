@@ -5,19 +5,40 @@ import { NavButton } from "../../componentes/NavButton/NavButton";
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 
+
 const useStyles = makeStyles({
     plantilla: {
-      boxsizing: "border-box",
+      boxSizing: "border-box",
       margin: 0,
       border: 0,
       borderRadius: 3,
       padding: '0px',
       position: "relative",
-      width: "60%",
+      width: "55%",
       height: "60%",
       display: "flex",
       flexDirection: "column",
       justifyContent: "space-between",
+
+
+      "@media (max-width: 1580px)": {
+
+        width: "80%",
+
+    },
+
+    "@media (max-width: 1100px)": {
+
+        width: "95%",
+
+    },
+
+    "@media (max-width: 850px)": {
+
+        height: "auto",
+
+    }
+
 
     },
 
@@ -28,7 +49,14 @@ const useStyles = makeStyles({
         display: "flex",
         flexDirection: "row",
 
-        justifyContent: "space-between"
+        justifyContent: "space-between",
+
+        "@media (max-width: 850px)": {
+
+            flexDirection: "column",
+            height: "auto",
+
+        }
 
     },
 
@@ -40,6 +68,43 @@ const useStyles = makeStyles({
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
+        order: 1,
+
+        "@media (max-width: 850px)": {
+
+            width: "100%",
+            order: 2
+
+        }
+
+    },
+
+    visualizar: {
+
+        width: "53.08%",
+        height: "100%",
+        boxSizing: "border-box",
+        backgroundColor: "#B180AE",
+        borderStyle: "solid",
+        borderWidth: "8px",
+        borderRadius: "15px",
+        color: "white",
+
+        backgroundImage: "url('/img/visualizarFondo.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        order: 2,
+        marginBottom: "0px",
+
+        "@media (max-width: 850px)": {
+
+            width: "100%",
+            order: 1,
+            marginBottom: "30px",
+            marginTop: "30px",
+            height: "405px"
+
+        }
 
     },
 
@@ -60,6 +125,12 @@ const useStyles = makeStyles({
         fontWeight: "400",
         color: 'white',
 
+        "@media (max-width: 850px)": {
+
+            marginBottom: "30px"
+
+        }
+
     },
 
     navegar: {
@@ -68,24 +139,14 @@ const useStyles = makeStyles({
         height: "12%",
         display: "flex",
         flexDirection: "row",
-        justifyContent: "space-between"
+        justifyContent: "space-between",
 
-    },
 
-    visualizar: {
+        "@media (max-width: 850px)": {
 
-        width: "53.08%",
-        height: "100%",
-        boxSizing: "border-box",
-        backgroundColor: "#B180AE",
-        borderStyle: "solid",
-        borderWidth: "8px",
-        borderRadius: "15px",
-        color: "white",
+            marginBottom: "30px"
 
-        backgroundImage: "url('/img/visualizarFondo.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
+        }
 
     },
 
@@ -104,7 +165,14 @@ const useStyles = makeStyles({
         textAlign:"center",
         display: "flex",
         flexFlow: "column wrap",
-        justifyContent: "center"
+        justifyContent: "center",
+
+        "@media (max-width: 850px)": {
+
+            height: "auto",
+            marginTop: "30PX"
+
+        }
 
 
     },
@@ -136,6 +204,8 @@ const useStyles = makeStyles({
 export const Plantilla = ({instruction, children, back, next}) => {
 
     const classes = useStyles();
+
+    const [screenSize, setScreenSize] = React.useState("");
 
     return(<div className={classes.plantilla}>
 

@@ -21,6 +21,12 @@ const useStyles = makeStyles({
             backgroundSize: "cover",
             backgroundPosition: "center",
 
+            "@media (max-width: 850px)": {
+
+                height: "auto"
+
+            }
+
         },
 
         subOne: {

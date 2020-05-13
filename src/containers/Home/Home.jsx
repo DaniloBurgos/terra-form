@@ -25,7 +25,16 @@ const useStyles = makeStyles({
         position: "absolute",
         bottom: "9%",
         left: "13%",
-        transform: "rotate(-4deg)"
+        transform: "rotate(-4deg)",
+
+
+        "@media (max-width: 850px)": {
+
+            bottom: "1%",
+            left: "9%",
+            transform: "rotate(0deg)",
+
+        }
 
 
     },
@@ -54,6 +63,18 @@ const useStyles = makeStyles({
 
                 objectFit: "contain",
                 maxWidth: "100%"
+
+        },
+
+        "@media (max-width: 1250px)": {
+
+            width: "70%",
+
+        },
+
+        "@media (max-width: 850px)": {
+
+            width: "95%",
 
         }
 
@@ -86,7 +107,20 @@ const useStyles = makeStyles({
 
         top: "36%",
         left: "78%",
-        width: "35%"
+        width: "35%",
+
+        "@media (max-width: 850px)": {
+
+            top: "56%",
+            left: "49%",
+            width: "48%"
+
+        }
+
+
+
+
+
 
     },
 
@@ -94,7 +128,15 @@ const useStyles = makeStyles({
         top: "36%",
         left: "76%",
         width: "35%",
-        animation: "$spin 180s linear infinite"
+        animation: "$spin 180s linear infinite",
+
+        "@media (max-width: 850px)": {
+
+            top: "56%",
+            left: "49%",
+            width: "48%"
+
+        }
     },
 
     marteHome: {
@@ -121,6 +163,37 @@ const useStyles = makeStyles({
     },
 
 
+    bannerDesk:{
+
+        display: "block",
+
+        "@media (max-width: 850px)": {
+
+            display: "none",
+
+        }
+
+
+
+
+    },
+
+    bannerMobile: {
+
+        display: "none",
+
+        "@media (max-width: 850px)": {
+
+            display: "block",
+
+        }
+
+
+
+
+    },
+
+
 
     "@keyframes spin": {
 
@@ -141,7 +214,8 @@ export const Home = () => {
 
         <div className={classes.panelContainer}>
 
-            <img src="/img/banner.png" alt=""/>
+            <img src="/img/banner.png" className={classes.bannerDesk} alt=""/>
+            <img src="/img/BannerMobile.png" className={classes.bannerMobile} alt=""/>
 
             <img src="/img/noSe.png" className={classes.planetasHome+ ' ' + classes.nose} alt=""/>
 

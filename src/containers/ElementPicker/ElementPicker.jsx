@@ -22,6 +22,13 @@ const useStyles = makeStyles({
             backgroundSize: "cover",
             backgroundPosition: "center",
 
+
+            "@media (max-width: 850px)": {
+
+                height: "auto"
+
+            }
+
         },
 
         elementPick: {
@@ -62,7 +69,14 @@ const useStyles = makeStyles({
         subImage: {
 
             height: "75%",
-            width: "auto"
+            width: "auto",
+
+            "@media (max-width: 850px)": {
+
+                height: "auto",
+                width: "22%",
+
+            }
 
         },
 
