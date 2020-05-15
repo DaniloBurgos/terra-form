@@ -1,22 +1,10 @@
 import * as React from "react";
-import {
-    Plantilla
-} from "../../componentes/Plantilla/Plantilla";
-import {
-    makeStyles
-} from '@material-ui/core/styles';
-import {
-    PlanetContext
-} from '../../utils/PlanetContext';
-import {
-    Planet
-} from "../../componentes/Planet/Planet";
-import {
-    Button
-} from "@material-ui/core";
-import {
-    useHistory
-} from "react-router-dom";
+import {Plantilla} from "../../componentes/Plantilla/Plantilla";
+import {makeStyles} from '@material-ui/core/styles';
+import {PlanetContext} from '../../utils/PlanetContext';
+import {Planet} from "../../componentes/Planet/Planet";
+import {Button} from "@material-ui/core";
+import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles({
 
@@ -37,7 +25,7 @@ const useStyles = makeStyles({
 
         "@media (max-width: 850px)": {
 
-            height: "100vh"
+            height: "auto"
 
         }
 
@@ -45,8 +33,8 @@ const useStyles = makeStyles({
 
     planetGalery: {
 
-        width: "100%",
-        height: "90%",
+        width: "99%",
+        height: "85%",
 
         display: "flex",
         flexDirection: "row",
@@ -56,11 +44,50 @@ const useStyles = makeStyles({
         flexWrap: "wrap",
         paddingTop: "5%",
         paddingBottom: "5%",
-        overflow: "auto"
+        overflow: "auto",
+
+       /* position: "absolute",
+        top: "50%",
+        left: "50%",
+        transform: "translate(-50%, -50%)",*/
+
+         /* width */
+        "&::-webkit-scrollbar": {
+            width: "10px",
+            paddingRight: "10px"
+        },
+
+        /* Track */
+        "&::-webkit-scrollbar-track": {
+            background: "#323455"
+        },
+
+        /* Handle */
+        "&::-webkit-scrollbar-thumb": {
+            background: "#B43F90",
+            borderRadius: "5px"
+        },
+
+        /* Handle on hover */
+        "&::-webkit-scrollbar-thumb:hover": {
+            background: "#555"
+        },
+
+
+
+        "@media (max-width: 850px)": {
+
+            height: "auto"
+
+        },
 
 
 
     },
+
+
+
+
 
     elementGalery: {
 
@@ -148,13 +175,13 @@ export const Galery = () => {
 
         //  console.log(elemId);
         // <Redirect to="/elementPicker"/>  <-- por qué no funciona esto?
-
+/*
         const chosen = globalContext.planetList.findIndex((elem) => {
 
             return elem.id === elemId;
 
         });
-
+*/
         /*
 
         Hacer esto para borrar el elemento antes de editarlo, va a perder la posición en la lista,
@@ -211,7 +238,11 @@ export const Galery = () => {
 
         <Plantilla instruction = "Here you can watch your creations" back = "/rotationPicker" next = "/" >
 
+
+
         <div className = {classes.planetGalery} >
+
+
 
         {globalContext.planetList.map((planet) => {
 
@@ -230,7 +261,11 @@ export const Galery = () => {
             })
         }
 
+
+
         </div>
+
+
 
          {selected && <div className = {classes.contPreview}>
 

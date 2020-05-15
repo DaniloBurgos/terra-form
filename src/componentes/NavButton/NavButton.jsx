@@ -90,23 +90,25 @@ export const NavButton = ({ text, link}) => {
     }
 */
 
+
+
 React.useEffect(()=>{
 
-  if (text==="End"){
+  if (text==="End"){  //si el texto del botón de next step dice end
 
-    if(globalContext.config.id ===""){
+    if(globalContext.config.id ===""){ //y el id del planeta en el contexto actual está vacía
 
-      globalContext.setConfig({
+      globalContext.setConfig({ //seteale un id usando la librería v4
         ...globalContext.config,
         id: v4(),
       });
 
-      setEdition(1);
+      setEdition(1); // si vamos a galería y venimos de un planeta nuevo setea el estado a 1
 
 
     } else {
 
-    setEdition(2);
+    setEdition(2); // si vamos a galería y el planeta ya tiene id, setea el estado a 2
 
     }
   }
@@ -117,11 +119,11 @@ React.useEffect(()=>{
 
 const handleFinish = () => {
 
-  if (text==="End"){
+  if (text==="End"){ //si doy click a next y texto dice End
 
-    if(edition===1){
+    if(edition===1){ //y venimos de un planeta nuevo
 
-      globalContext.setPlanetList([
+      globalContext.setPlanetList([ // agrego un objeto a la lista de planetas con los datos del contexto actual
         ...globalContext.planetList,
         {
 
@@ -136,7 +138,7 @@ const handleFinish = () => {
         }
       ]);
 
-      globalContext.setConfig({
+      globalContext.setConfig({  // y seteo los valores del contexto al valor por default
 
         id: "",
         element: "/img/waterCont.png",
@@ -151,11 +153,10 @@ const handleFinish = () => {
 
     }
 
-    if (edition===2) {
+    if (edition===2) { //pero si venimos de un planeta viejo...
 
-      const chosen = globalContext.planetList.findIndex((elem) => {
-
-        return elem.id === globalContext.config.id;
+      const chosen = globalContext.planetList.findIndex((elem) => { //aquí recorro el arreglo de planetas buscando si algún valor id de un objeto contenido en el arreglo
+        return elem.id === globalContext.config.id;// tiene el mismo valor del id del contexto actual
 
     });
 
@@ -169,10 +170,6 @@ const handleFinish = () => {
 
 
     }
-
-
-
-
   }
 
 

@@ -99,7 +99,14 @@ const useStyles = makeStyles({
       display: "flex",
       flexDirection: "column",
       justifyContent: "center",
-      alignItems: "center"
+      alignItems: "center",
+
+      "@media (max-width: 850px)": {
+
+        height: "70%",
+        marginBottom: "30px"
+
+    }
 
     },
 
@@ -112,7 +119,10 @@ const useStyles = makeStyles({
       flexFlow: "row wrap",
       justifyContent: "center",
       alignItems:"center",
-      position: "relative"
+      position: "relative",
+      backgroundImage: "url('/img/sliderCont.png')",
+      backgroundSize: "100% 100%",
+      backgroundPosition: "center",
 
 
     },
@@ -143,7 +153,7 @@ export const AppSlider = ({ text, onChange, value, min, max}) => {
 
             <div className={classes.sliderCont}>
 
-            <img className={classes.trackImage} src="/img/sliderCont.png" alt=""/>
+          {/* <img className={classes.trackImage} src="/img/sliderCont.png" alt=""/> */}
 
             <Slider
 

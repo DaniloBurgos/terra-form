@@ -112,6 +112,7 @@ const useStyles = makeStyles({
 
         width: "100%",
         height: "80%",
+        position: "relative",
 
         boxSizing: "border-box",
         backgroundColor: "#323455",
@@ -205,7 +206,6 @@ export const Plantilla = ({instruction, children, back, next}) => {
 
     const classes = useStyles();
 
-    const [screenSize, setScreenSize] = React.useState("");
 
     return(<div className={classes.plantilla}>
 
