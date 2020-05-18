@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/terra-form/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/terra-form/static/js/main.f96efa47.chunk.js",
+    "main.js.map": "/terra-form/static/js/main.f96efa47.chunk.js.map",
+    "runtime-main.js": "/terra-form/static/js/runtime-main.cad5ea78.js",
+    "runtime-main.js.map": "/terra-form/static/js/runtime-main.cad5ea78.js.map",
+    "static/js/2.e6e54068.chunk.js": "/terra-form/static/js/2.e6e54068.chunk.js",
+    "static/js/2.e6e54068.chunk.js.map": "/terra-form/static/js/2.e6e54068.chunk.js.map",
+    "index.html": "/terra-form/index.html",
+    "precache-manifest.f4dc495243348e2de6aaa3ebc4d8b21e.js": "/terra-form/precache-manifest.f4dc495243348e2de6aaa3ebc4d8b21e.js",
+    "service-worker.js": "/terra-form/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/terra-form/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.e6e54068.chunk.js.LICENSE.txt": "/terra-form/static/js/2.e6e54068.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cad5ea78.js",
+    "static/js/2.e6e54068.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.f96efa47.chunk.js"
+  ]
+}
