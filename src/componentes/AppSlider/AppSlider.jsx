@@ -28,7 +28,7 @@ const useStyles = makeStyles({
 
     nuevoThumb: {
 
-      backgroundImage: "url('/img/sliderThumb.png')",
+      backgroundImage: "url('/terra-form/img/sliderThumb.png')",
       backgroundSize: "cover",
       backgroundPosition: "center",
       width: "30px",
@@ -120,7 +120,7 @@ const useStyles = makeStyles({
       justifyContent: "center",
       alignItems:"center",
       position: "relative",
-      backgroundImage: "url('/img/sliderCont.png')",
+      backgroundImage: "url('/terra-form/img/sliderCont.png')",
       backgroundSize: "100% 100%",
       backgroundPosition: "center",
 

@@ -17,7 +17,7 @@ const useStyles = makeStyles({
             justifyContent: "center",
             alignItems: "center",
 
-            backgroundImage: "url('/img/FondoDiameter.jpg')",
+            backgroundImage: "url('/terra-form/img/FondoDiameter.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
 

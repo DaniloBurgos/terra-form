@@ -18,7 +18,7 @@ const useStyles = makeStyles({
             justifyContent: "center",
             alignItems: "center",
 
-            backgroundImage: "url('/img/FondoAtmosphere.jpg')",
+            backgroundImage: "url('/terra-form/img/FondoAtmosphere.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
 
@@ -33,7 +33,7 @@ const useStyles = makeStyles({
 
         leftButton: {
 
-            backgroundImage: "url('/img/left.png')",
+            backgroundImage: "url('/terra-form/img/left.png')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundColor: "rgb(0,0,0,0)",
@@ -44,7 +44,7 @@ const useStyles = makeStyles({
 
             '&:hover': {
 
-                backgroundImage: "url('/img/leftHover.png')",
+                backgroundImage: "url('/terra-form/img/leftHover.png')",
 
                 backgroundColor: "rgb(0,0,0,0)",
                 boxShadow: "none"
@@ -56,7 +56,7 @@ const useStyles = makeStyles({
 
         rightButton: {
 
-            backgroundImage: "url('/img/right.png')",
+            backgroundImage: "url('/terra-form/img/right.png')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundColor: "rgb(0,0,0,0)",
@@ -67,7 +67,7 @@ const useStyles = makeStyles({
 
             '&:hover': {
 
-                backgroundImage: "url('/img/rightHover.png')",
+                backgroundImage: "url('/terra-form/img/rightHover.png')",
 
                 backgroundColor: "rgb(0,0,0,0)",
                 boxShadow: "none"

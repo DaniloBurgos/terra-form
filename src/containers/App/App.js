@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, HashRouter } from 'react-router-dom';
 import { Home } from '../Home/Home';
 import { ElementPicker } from '../ElementPicker/ElementPicker';
 import { DiameterPicker } from '../DiameterPicker/DiameterPicker';
@@ -12,12 +12,12 @@ function App() {
 
   const [planetList, setPlanetList] = React.useState([
 
-
+/*
 
     {
       id: "static1",
-      element: "/img/waterCont.png",
-      elementAtmos: "img/waterContAtmos.png",
+      element: "/terra-form/img/waterCont.png",
+      elementAtmos: "/terra-form/img/waterContAtmos.png",
       sizePlanet:65,
       sizeAtmosphere:65,
       senseRotation:"normal",
@@ -25,8 +25,8 @@ function App() {
     },
     {
       id:"static2",
-      element: "/img/fireCont.png",
-      elementAtmos: "img/fireContAtmos.png",
+      element: "/terra-form/img/fireCont.png",
+      elementAtmos: "/terra-form/img/fireContAtmos.png",
       sizePlanet:65,
       sizeAtmosphere:65,
       senseRotation:"normal",
@@ -34,8 +34,8 @@ function App() {
     },
     {
       id: "static3",
-      element: "/img/waterIsland.png",
-      elementAtmos: "img/waterIslandAtmos.png",
+      element: "/terra-form/img/waterIsland.png",
+      elementAtmos: "/terra-form/img/waterIslandAtmos.png",
       sizePlanet:65,
       sizeAtmosphere:65,
       senseRotation:"normal",
@@ -43,8 +43,8 @@ function App() {
     },
     {
       id: "static4",
-      element: "/img/fireIsland.png",
-      elementAtmos: "img/fireIslandAtmos.png",
+      element: "/terra-form/img/fireIsland.png",
+      elementAtmos: "/terra-form/img/fireIslandAtmos.png",
       sizePlanet:65,
       sizeAtmosphere:65,
       senseRotation:"normal",
@@ -53,8 +53,8 @@ function App() {
 
     {
       id: "static5",
-      element: "/img/waterCont.png",
-      elementAtmos: "img/waterContAtmos.png",
+      element: "/terra-form/img/waterCont.png",
+      elementAtmos: "/terra-form/img/waterContAtmos.png",
       sizePlanet:65,
       sizeAtmosphere:65,
       senseRotation:"normal",
@@ -62,8 +62,8 @@ function App() {
     },
     {
       id:"static6",
-      element: "/img/fireCont.png",
-      elementAtmos: "img/fireContAtmos.png",
+      element: "/terra-form/img/fireCont.png",
+      elementAtmos: "/terra-form/img/fireContAtmos.png",
       sizePlanet:65,
       sizeAtmosphere:65,
       senseRotation:"normal",
@@ -71,8 +71,8 @@ function App() {
     },
     {
       id: "static7",
-      element: "/img/waterIsland.png",
-      elementAtmos: "img/waterIslandAtmos.png",
+      element: "/terra-form/img/waterIsland.png",
+      elementAtmos: "/terra-form/img/waterIslandAtmos.png",
       sizePlanet:65,
       sizeAtmosphere:65,
       senseRotation:"normal",
@@ -80,8 +80,8 @@ function App() {
     },
     {
       id: "static8",
-      element: "/img/fireIsland.png",
-      elementAtmos: "img/fireIslandAtmos.png",
+      element: "/terra-form/img/fireIsland.png",
+      elementAtmos: "/terra-form/img/fireIslandAtmos.png",
       sizePlanet:65,
       sizeAtmosphere:65,
       senseRotation:"normal",
@@ -90,8 +90,8 @@ function App() {
 
     {
       id: "static9",
-      element: "/img/waterCont.png",
-      elementAtmos: "img/waterContAtmos.png",
+      element: "/terra-form/img/waterCont.png",
+      elementAtmos: "/terra-form/img/waterContAtmos.png",
       sizePlanet:65,
       sizeAtmosphere:65,
       senseRotation:"normal",
@@ -99,8 +99,8 @@ function App() {
     },
     {
       id:"static10",
-      element: "/img/fireCont.png",
-      elementAtmos: "img/fireContAtmos.png",
+      element: "/terra-form/img/fireCont.png",
+      elementAtmos: "/terra-form/img/fireContAtmos.png",
       sizePlanet:65,
       sizeAtmosphere:65,
       senseRotation:"normal",
@@ -108,8 +108,8 @@ function App() {
     },
     {
       id: "static11",
-      element: "/img/waterIsland.png",
-      elementAtmos: "img/waterIslandAtmos.png",
+      element: "/terra-form/img/waterIsland.png",
+      elementAtmos: "/terra-form/img/waterIslandAtmos.png",
       sizePlanet:65,
       sizeAtmosphere:65,
       senseRotation:"normal",
@@ -117,8 +117,8 @@ function App() {
     },
     {
       id: "static12",
-      element: "/img/fireIsland.png",
-      elementAtmos: "img/fireIslandAtmos.png",
+      element: "/terra-form/img/fireIsland.png",
+      elementAtmos: "/terra-form/img/fireIslandAtmos.png",
       sizePlanet:65,
       sizeAtmosphere:65,
       senseRotation:"normal",
@@ -127,8 +127,8 @@ function App() {
 
     {
       id:"static13",
-      element: "/img/fireCont.png",
-      elementAtmos: "img/fireContAtmos.png",
+      element: "/terra-form/img/fireCont.png",
+      elementAtmos: "/terra-form/img/fireContAtmos.png",
       sizePlanet:65,
       sizeAtmosphere:65,
       senseRotation:"normal",
@@ -136,8 +136,8 @@ function App() {
     },
     {
       id: "static14",
-      element: "/img/waterIsland.png",
-      elementAtmos: "img/waterIslandAtmos.png",
+      element: "/terra-form/img/waterIsland.png",
+      elementAtmos: "/terra-form/img/waterIslandAtmos.png",
       sizePlanet:65,
       sizeAtmosphere:65,
       senseRotation:"normal",
@@ -145,15 +145,15 @@ function App() {
     },
     {
       id: "static15",
-      element: "/img/fireIsland.png",
-      elementAtmos: "img/fireIslandAtmos.png",
+      element: "/terra-form/img/fireIsland.png",
+      elementAtmos: "/terra-form/img/fireIslandAtmos.png",
       sizePlanet:65,
       sizeAtmosphere:65,
       senseRotation:"normal",
       velRotation:165,
     },
 
-
+*/
   ]);
 
 
@@ -181,14 +181,11 @@ function App() {
   },[planetList]);
 
 
-
-
-
   const [config, setConfig] = React.useState({
 
     id: "",
-    element: "/img/waterCont.png",
-    elementAtmos: "img/waterContAtmos.png",
+    element: "/terra-form/img/waterCont.png",
+    elementAtmos: "/terra-form/img/waterContAtmos.png",
     sizePlanet:65,
     sizeAtmosphere:65,
     senseRotation:"normal",
@@ -211,7 +208,7 @@ function App() {
 
       <PlanetContext.Provider value={globalContext}>
 
-        <BrowserRouter>
+        <HashRouter>
 
           <Route path="/" exact component={Home} />
           <Route path="/elementPicker" exact component={ElementPicker} />
@@ -220,7 +217,7 @@ function App() {
           <Route path="/galery" exact component={Galery} />
 
 
-        </BrowserRouter>
+        </HashRouter>
 
 
       </PlanetContext.Provider>

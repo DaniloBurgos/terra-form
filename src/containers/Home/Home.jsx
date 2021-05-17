@@ -43,7 +43,7 @@ const useStyles = makeStyles({
 
         width: "100vw",
         height: "100vh",
-        backgroundImage: 'url("/img/FondoHome.jpg")',
+        backgroundImage: 'url("/terra-form/img/FondoHome.jpg")',
         backgroundSize: "cover",
         backgroundPosition: "center",
 
@@ -214,19 +214,19 @@ export const Home = () => {
 
         <div className={classes.panelContainer}>
 
-            <img src="/img/banner.png" className={classes.bannerDesk} alt=""/>
-            <img src="/img/BannerMobile.png" className={classes.bannerMobile} alt=""/>
+            <img src="/terra-form/img/banner.png" className={classes.bannerDesk} alt=""/>
+            <img src="/terra-form/img/BannerMobile.png" className={classes.bannerMobile} alt=""/>
 
-            <img src="/img/noSe.png" className={classes.planetasHome+ ' ' + classes.nose} alt=""/>
+            <img src="/terra-form/img/noSe.png" className={classes.planetasHome+ ' ' + classes.nose} alt=""/>
 
-            <img src="/img/tierraIntro.png" className={classes.planetasHome+ ' ' + classes.tierraHome} alt=""/>
-            <img src="/img/nubesTierraIntro.png" className={classes.planetasHome+ ' ' + classes.nubesTierraHome} alt=""/>
+            <img src="/terra-form/img/tierraIntro.png" className={classes.planetasHome+ ' ' + classes.tierraHome} alt=""/>
+            <img src="/terra-form/img/nubesTierraIntro.png" className={classes.planetasHome+ ' ' + classes.nubesTierraHome} alt=""/>
 
-            <img src="/img/marte.png" className={classes.planetasHome+ ' ' + classes.marteHome} alt=""/>
-            <img src="/img/lunasMarte.png" className={classes.planetasHome+ ' ' + classes.nubesMarteHome} alt=""/>
+            <img src="/terra-form/img/marte.png" className={classes.planetasHome+ ' ' + classes.marteHome} alt=""/>
+            <img src="/terra-form/img/lunasMarte.png" className={classes.planetasHome+ ' ' + classes.nubesMarteHome} alt=""/>
 
-            <img src="/img/planetaAmarilloIntro.png" className={classes.planetasHome+ ' ' + classes.AmarilloHome} alt=""/>
-            <img src="/img/nubesPlanetaAmarillo.png" className={classes.planetasHome+ ' ' + classes.nubesAmarilloHome} alt=""/>
+            <img src="/terra-form/img/planetaAmarilloIntro.png" className={classes.planetasHome+ ' ' + classes.AmarilloHome} alt=""/>
+            <img src="/terra-form/img/nubesPlanetaAmarillo.png" className={classes.planetasHome+ ' ' + classes.nubesAmarilloHome} alt=""/>
 
             <Button className={classes.homeButton} component={Link} to="/elementPicker">
                 START

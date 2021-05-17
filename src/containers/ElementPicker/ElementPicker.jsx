@@ -18,7 +18,7 @@ const useStyles = makeStyles({
             justifyContent: "center",
             alignItems: "center",
 
-            backgroundImage: "url('/img/FondoElement.jpg')",
+            backgroundImage: "url('/terra-form/img/FondoElement.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
 
@@ -137,8 +137,8 @@ export const ElementPicker = () => {
 
                     globalContext.setConfig({
                     ...globalContext.config,
-                    element: "/img/fireIsland.png",
-                    elementAtmos: "/img/fireIslandAtmos.png"
+                    element: "/terra-form/img/fireIsland.png",
+                    elementAtmos: "/terra-form/img/fireIslandAtmos.png"
 
                     });
 
@@ -148,8 +148,8 @@ export const ElementPicker = () => {
 
                     globalContext.setConfig({
                     ...globalContext.config,
-                    element: "/img/fireCont.png",
-                    elementAtmos: "/img/fireContAtmos.png"
+                    element: "/terra-form/img/fireCont.png",
+                    elementAtmos: "/terra-form/img/fireContAtmos.png"
 
                     });
 
@@ -161,8 +161,8 @@ export const ElementPicker = () => {
 
                     globalContext.setConfig({
                     ...globalContext.config,
-                    element: "/img/waterIsland.png",
-                    elementAtmos: "/img/waterIslandAtmos.png"
+                    element: "/terra-form/img/waterIsland.png",
+                    elementAtmos: "/terra-form/img/waterIslandAtmos.png"
 
                     });
 
@@ -171,8 +171,8 @@ export const ElementPicker = () => {
 
                     globalContext.setConfig({
                     ...globalContext.config,
-                    element: "/img/waterCont.png",
-                    elementAtmos: "/img/waterContAtmos.png"
+                    element: "/terra-form/img/waterCont.png",
+                    elementAtmos: "/terra-form/img/waterContAtmos.png"
 
                     });
 
@@ -194,8 +194,8 @@ export const ElementPicker = () => {
 
                 globalContext.setConfig({
                     ...globalContext.config,
-                    element: "/img/waterCont.png",
-                    elementAtmos: "/img/waterContAtmos.png"
+                    element: "/terra-form/img/waterCont.png",
+                    elementAtmos: "/terra-form/img/waterContAtmos.png"
 
                     });
 
@@ -203,8 +203,8 @@ export const ElementPicker = () => {
 
                 globalContext.setConfig({
                     ...globalContext.config,
-                    element: "/img/waterIsland.png",
-                    elementAtmos: "/img/waterIslandAtmos.png"
+                    element: "/terra-form/img/waterIsland.png",
+                    elementAtmos: "/terra-form/img/waterIslandAtmos.png"
 
                     });
 
@@ -216,8 +216,8 @@ export const ElementPicker = () => {
 
                 globalContext.setConfig({
                     ...globalContext.config,
-                    element: "/img/fireCont.png",
-                    elementAtmos: "/img/fireContAtmos.png"
+                    element: "/terra-form/img/fireCont.png",
+                    elementAtmos: "/terra-form/img/fireContAtmos.png"
 
                     });
 
@@ -225,8 +225,8 @@ export const ElementPicker = () => {
 
                 globalContext.setConfig({
                     ...globalContext.config,
-                    element: "/img/fireIsland.png",
-                    elementAtmos: "/img/fireIslandAtmos.png"
+                    element: "/terra-form/img/fireIsland.png",
+                    elementAtmos: "/terra-form/img/fireIslandAtmos.png"
 
                     });
 
@@ -251,15 +251,15 @@ export const ElementPicker = () => {
 
 
                 {checkA === true
-                ? <img className={classes.subImage} src="/img/selectFireUnChecked.png" alt=""/>
-                : <img className={classes.subImage} src="/img/selectFire.png" alt=""/>
+                ? <img className={classes.subImage} src="/terra-form/img/selectFireUnChecked.png" alt=""/>
+                : <img className={classes.subImage} src="/terra-form/img/selectFire.png" alt=""/>
                 }
 
                 <Switch checked={checkA} onChange={handleChangeA} classes={ {checked: classes.water, track: classes.nueva, thumb: classes.fire}}/>
 
                 {checkA === false
-                ? <img className={classes.subImage} src="/img/selectWaterUnChecked.png" alt=""/>
-                : <img className={classes.subImage} src="/img/selectWater.png" alt=""/>
+                ? <img className={classes.subImage} src="/terra-form/img/selectWaterUnChecked.png" alt=""/>
+                : <img className={classes.subImage} src="/terra-form/img/selectWater.png" alt=""/>
                 }
 
 
@@ -275,8 +275,8 @@ export const ElementPicker = () => {
 
             {checkB === true
 
-            ?<img className={classes.subImage} src="/img/SelectContinentWaterChecked.png" alt=""/>
-            : <img className={classes.subImage} src="/img/SelectContinentWater.png" alt=""/>
+            ?<img className={classes.subImage} src="/terra-form/img/SelectContinentWaterChecked.png" alt=""/>
+            : <img className={classes.subImage} src="/terra-form/img/SelectContinentWater.png" alt=""/>
 
             }
 
@@ -284,8 +284,8 @@ export const ElementPicker = () => {
 
             {checkB === false
 
-            ? <img className={classes.subImage} src="/img/SelectIslandWaterChecked.png" alt=""/>
-            : <img className={classes.subImage} src="/img/SelectIslandWater.png" alt=""/>
+            ? <img className={classes.subImage} src="/terra-form/img/SelectIslandWaterChecked.png" alt=""/>
+            : <img className={classes.subImage} src="/terra-form/img/SelectIslandWater.png" alt=""/>
 
             }
 
@@ -294,8 +294,8 @@ export const ElementPicker = () => {
 
             {checkB === true
 
-            ?<img className={classes.subImage} src="/img/SelectContinentFireChecked.png" alt=""/>
-            : <img className={classes.subImage} src="/img/SelectContinentFire.png" alt=""/>
+            ?<img className={classes.subImage} src="/terra-form/img/SelectContinentFireChecked.png" alt=""/>
+            : <img className={classes.subImage} src="/terra-form/img/SelectContinentFire.png" alt=""/>
 
             }
 
@@ -303,8 +303,8 @@ export const ElementPicker = () => {
 
             {checkB === false
 
-            ? <img className={classes.subImage} src="/img/SelectIslandFireChecked.png" alt=""/>
-            : <img className={classes.subImage} src="/img/SelectIslandFire.png" alt=""/>
+            ? <img className={classes.subImage} src="/terra-form/img/SelectIslandFireChecked.png" alt=""/>
+            : <img className={classes.subImage} src="/terra-form/img/SelectIslandFire.png" alt=""/>
 
             }
 

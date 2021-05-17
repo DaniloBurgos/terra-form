@@ -18,7 +18,7 @@ const useStyles = makeStyles({
         justifyContent: "center",
         alignItems: "center",
 
-        backgroundImage: "url('/img/FondoHome.jpg')",
+        backgroundImage: "url('/terra-form/img/FondoHome.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
 
@@ -104,7 +104,7 @@ const useStyles = makeStyles({
         top: "10px",
         left: "10px",
 
-        backgroundImage: "url('/img/editar.png')",
+        backgroundImage: "url('/terra-form/img/editar.png')",
         backgroundSize: "contain",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
@@ -115,7 +115,7 @@ const useStyles = makeStyles({
 
         '&:hover': {
 
-            backgroundImage: "url('/img/editarHover.png')",
+            backgroundImage: "url('/terra-form/img/editarHover.png')",
             backgroundColor: "rgb(0,0,0,0)",
             boxShadow: "none"
         }
@@ -128,7 +128,7 @@ const useStyles = makeStyles({
         top: "10px",
         right: "10px",
 
-        backgroundImage: "url('/img/borrar.png')",
+        backgroundImage: "url('/terra-form/img/borrar.png')",
         backgroundSize: "contain",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
@@ -139,7 +139,7 @@ const useStyles = makeStyles({
 
         '&:hover': {
 
-            backgroundImage: "url('/img/borrarHover.png')",
+            backgroundImage: "url('/terra-form/img/borrarHover.png')",
             backgroundColor: "rgb(0,0,0,0)",
             boxShadow: "none"
         }

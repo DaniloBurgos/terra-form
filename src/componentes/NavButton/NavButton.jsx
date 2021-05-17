@@ -74,7 +74,7 @@ export const NavButton = ({ text, link}) => {
         globalContext.setConfig({
 
        //   id: "",
-          element: "/img/waterCont.png",
+          element: "/terra-form/terra-form/img/waterCont.png",
           elementAtmos: "img/waterContAtmos.png",
           sizePlanet:65,
           sizeAtmosphere:65,
@@ -141,7 +141,7 @@ const handleFinish = () => {
       globalContext.setConfig({  // y seteo los valores del contexto al valor por default
 
         id: "",
-        element: "/img/waterCont.png",
+        element: "/terra-form/img/waterCont.png",
         elementAtmos: "img/waterContAtmos.png",
         sizePlanet:65,
         sizeAtmosphere:65,

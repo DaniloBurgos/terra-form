@@ -90,7 +90,7 @@ const useStyles = makeStyles({
         borderRadius: "15px",
         color: "white",
 
-        backgroundImage: "url('/img/visualizarFondo.png')",
+        backgroundImage: "url('/terra-form/img/visualizarFondo.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         order: 2,
